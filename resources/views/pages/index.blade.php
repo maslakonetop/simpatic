@@ -55,8 +55,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
           <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
-          <li><a class="nav-link scrollto" href="#services">Investasi</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">KPI</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Investasi</a></li>
+          <li><a class="nav-link scrollto " href="#services">KPI</a></li>
           <li class="dropdown"><a href="#"><span>Fasilitas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Bandara</a></li>
@@ -362,8 +362,8 @@
       <div class="container">
 
         <div class="section-title" data-aos="zoom-out">
-          <h2>Services</h2>
-          <p>What we do offer</p>
+          <h2>KPI</h2>
+          <p>Kawasan Peruntukan Industri</p>
         </div>
 
         <div class="row">
@@ -421,15 +421,15 @@
       <div class="container">
 
         <div class="section-title" data-aos="zoom-out">
-          <h2>Portfolio</h2>
-          <p>What we've done</p>
+          <h2>Investasi</h2>
+          <p>Cek Peluang dan Potensi Investasi</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
+          <li data-filter="*" class="filter-active">Semua</li>
+          <li data-filter=".filter-app">Potensial</li>
+          <li data-filter=".filter-card">Prospektif</li>
+          <li data-filter=".filter-web">Siap Ditawarkan</li>
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up">
