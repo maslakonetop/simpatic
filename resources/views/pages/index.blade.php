@@ -46,9 +46,9 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><img src="assets/img/logocilacapkab.png" alt=""></a></h1>
+        <a href="index.html"><img src="assets/img/logosimpatic.png" alt="" class="img-fluid"></a>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.html"><img src="assets/img/headerbawah.png" alt="" class="img-fluid ml-auto"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -59,7 +59,7 @@
           <li><a class="nav-link scrollto " href="#services">KPI</a></li>
           <li class="dropdown"><a href="#"><span>Fasilitas</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Bandara</a></li>
+              <li><a href="/bandara">Bandara</a></li>
               {{-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -69,19 +69,19 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li> --}}
-              <li><a href="#">Rumah Sakit</a></li>
-              <li><a href="#">Hotel</a></li>
-              <li><a href="#">Pelabuhan</a></li>
-              <li><a href="#">Perbankan</a></li>
-              <li><a href="#">Terminal Bus</a></li>
-              <li><a href="#">Stasiun Kereta Api</a></li>
+              <li><a href="/rumahsakit">Rumah Sakit</a></li>
+              <li><a href="/hotel">Hotel</a></li>
+              <li><a href="/pelabuhan">Pelabuhan</a></li>
+              <li><a href="/bank">Perbankan</a></li>
+              <li><a href="/terminal">Terminal Bus</a></li>
+              <li><a href="/stasiun">Stasiun Kereta Api</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#pricing">Tim Investasi</a></li>
           <li><a class="nav-link scrollto" href="#team">Berita</a></li>
           <li><a class="nav-link scrollto" href="#team">Buku Investasi</a></li>
           <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
-          <li><a class="nav-link scrollto" href="#contact"><i class="bi bi-box-arrow-in-right"></i></a></li>
+          <li><a class="nav-link scrollto" href="/dashboard"><i class="bi bi-box-arrow-in-right"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -96,7 +96,11 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown mt-lg-5"><img src="assets/img/headeratas.png" alt=""></h2>
+          <h2 class="mt-lg-5">
+            <video autoplay muted loop id="myVideo">
+              <source src="assets/img/logo.mp4" type="video/mp4">
+            </video>
+          </h2>
           <p class="animate__animated fanimate__adeInUp"><img src="assets/img/headerbawah.png" alt=""></p>
           <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Mulai Berinvestasi</a>
         </div>
@@ -130,7 +134,7 @@
 
     </div>
 
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+    {{-- <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
       <defs>
         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
       </defs>
@@ -143,7 +147,7 @@
       <g class="wave3">
         <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
       </g>
-    </svg>
+    </svg> --}}
 
   </section><!-- End Hero -->
 
@@ -181,9 +185,12 @@
         </div> --}}
         <div class="row">
 
-          <div class="col-lg-6 video-box align-self-baseline" data-aos="zoom-in" data-aos-delay="100">
-            <img src="https://simpatic.cilacapkab.go.id/assets/img/DJI_0100_1.jpg" class="img-fluid" alt="" style="height:850px;width:550px;">
-            <a href="https://www.youtube.com/watch?v=JjXhD-B1XjU&t=2s" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="zoom-in" >
+            {{-- <img src="https://simpatic.cilacapkab.go.id/assets/img/DJI_0100_1.jpg" class="img-fluid" alt="" style="height:850px;width:550px;"> --}}
+            {{-- <a href="https://www.youtube.com/watch?v=JjXhD-B1XjU&t=2s" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> --}}
+            <video autoplay muted loop>
+              <source src="https://www.youtube.com/watch?v=JjXhD-B1XjU&t=2s" type="video/mp4">
+            </video>
           </div>
     
           <div class="col-lg-6 pt-3 pt-lg-0 content">
