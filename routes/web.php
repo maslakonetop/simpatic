@@ -18,7 +18,7 @@ use App\Http\Controllers\RumahSakitController;
 */
 
 Route::get('/', [BerandaController::class, 'index']);
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/admin', [DashboardController::class, 'index']);
 Route::get('/bandara', [BandaraController::class, 'index']);
 Route::get('/rumahsakit', [RumahSakitController::class, 'index']);
 Route::get('/hotel', [BandaraController::class, 'index']);
