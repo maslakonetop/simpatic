@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
-<Schema name="Adipala" id="Adipala">
+<Schema name="adipala" id="adipala">
 	<SimpleField name="timestamp" type="string"></SimpleField>
 	<SimpleField name="begin" type="string"></SimpleField>
 	<SimpleField name="end" type="string"></SimpleField>
@@ -21,10 +21,10 @@
 	<SimpleField name="SHAPE_LE_1" type="float"></SimpleField>
 	<SimpleField name="SHAPE_AREA" type="float"></SimpleField>
 </Schema>
-<Folder><name>Adipala</name>
+<Folder><name>adipala</name>
   <Placemark>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#Adipala">
+	<ExtendedData><SchemaData schemaUrl="#adipala">
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>

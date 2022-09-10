@@ -29,6 +29,12 @@ hr.new5 {
 </style>
 <section class="content">
     <div class="container-fluid">
+        @if (session()->has('berhasil'))
+        <div class="alert alert-succes alert-dismissable fade show" role="alert">
+            {{ session('berhasil') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+        </div>            
+        @endif
         <h3 class="text-center mb-3">Entry Hotel Baru</h3>
         <hr class="new1">
         <form action="/dashboard/hotel" method="POST">
@@ -95,10 +101,11 @@ hr.new5 {
                       <div class="row mb-3">
                           <div class="col-md-5">
                             <div class="form-floating">
-                            <textarea class="form-control" name="detail" class="@error('latitude') is-invalid @enderror" placeholder="Detail" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Detail</label>
+                            {{-- <textarea class="form-control" name="fasilitas" class="@error('fasilitas') is-invalid @enderror" placeholder="fasilitas" id="floatingTextarea2" style="height: 100px"></textarea> --}}
+                            <input type="text" name="fasilitas" class="form-control @error('fasilitas') is-invalid @enderror" id="floatingfasilitas" placeholder="Fasilitas">
+                            <label for="floatingTextarea2">Fasilitas</label>
                             </div>
-                            @error('detail')                  
+                            @error('fasilitas')                  
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -116,4 +123,5 @@ hr.new5 {
         </form>
     </div>
 </section>
+
 @endsection

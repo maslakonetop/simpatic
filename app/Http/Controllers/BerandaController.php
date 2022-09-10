@@ -12,4 +12,10 @@ class BerandaController extends Controller
             'title' => 'Beranda'
         ]);
     }
+
+    public function getsubsektor($id)
+    {
+        $subsektor = DB::table('subsektors')->where('id_sektor', $id)->pluck("sub_sektor", "id");
+        return json_encode($subsektor);
+    }
 }

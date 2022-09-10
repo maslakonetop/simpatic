@@ -7,6 +7,7 @@ use App\Http\Controllers\BandaraController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\InvestasiController;
 use App\Http\Controllers\RumahSakitController;
 
 /*
@@ -30,3 +31,5 @@ Route::post('/register', [RegisterController::class, 'store']);
 // Route::get('/bandara', [BandaraController::class, 'index']);
 Route::resource('/dashboard/bandara', BandaraController::class)->middleware('auth');
 Route::resource('/dashboard/hotel', HotelController::class)->middleware('auth');
+Route::resource('/dashboard/investasi', InvestasiController::class)->middleware('auth');
+Route::get('/caripertanian/getsubsektor/{id}', [InvestorController::class, 'getsubsektor']);

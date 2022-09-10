@@ -17,7 +17,7 @@ class HotelController extends Controller
     {
         $data = Hotel::all();
         return view('dashboard.hotel.index', [
-            'data' => $data,
+            'datas' => $data,
             'title' => 'Hotel'
         ]);
     }
@@ -42,16 +42,19 @@ class HotelController extends Controller
      */
     public function store(StoreHotelRequest $request)
     {
-        return $request;
-        $request->validated([
+        // return $request;
+        $validatedData = $request->validate([
             'nama' => 'required|min:5|max:255',
             'latitude' => 'required|min:3|max:10',
             'longitude' => 'required|min:3|max:10',
             'alamat' => 'required|min:3|max:255',
             'bintang' => 'required|min:3|max:255',
-            'detail' => 'required|min5|max:255'
+            'fasilitas' => 'required|min:5|max:255'
         ]);
-        dd('Berhasil!!!');
+        // dd('Berhasil!!!');
+        Hotel::create($validatedData);
+
+        return redirect('/dashboard/hotel')->with('Berhasil', 'Hotel Baru berhasil disimpan');
     }
 
     /**

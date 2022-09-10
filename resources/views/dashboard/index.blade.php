@@ -102,5 +102,6 @@
             map.fitBounds(runLayer.getBounds());
         })
         .addTo(map);
+    
 </script>
 @endsection

@@ -13,7 +13,7 @@ class UpdateTerminalBusRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
